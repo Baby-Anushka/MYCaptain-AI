@@ -1,0 +1,18 @@
+#Number of terms we want
+n = int(input("enter how many number of terms"))
+#first two terms
+n1,n2=0,1
+c=0
+#checking if the term is valid
+if n<=0:
+    print("enter positive number")
+elif n==1:
+    print("fib series upto",n)
+    print(n1)
+else:
+    while c<n:
+        print(n1)
+        n3=n1+n2
+        n1=n2
+        n2=n3
+        c=c+1
